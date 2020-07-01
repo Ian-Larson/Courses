@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6218F0C224ABEA11007D4299 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6218F0C124ABEA11007D4299 /* ItemRow.swift */; };
 		628DC5DD24AABBC40018BA50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628DC5DC24AABBC40018BA50 /* AppDelegate.swift */; };
 		628DC5DF24AABBC40018BA50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628DC5DE24AABBC40018BA50 /* SceneDelegate.swift */; };
 		628DC5E124AABBC40018BA50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628DC5E024AABBC40018BA50 /* ContentView.swift */; };
 		628DC5E324AABBC50018BA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628DC5E224AABBC50018BA50 /* Assets.xcassets */; };
 		628DC5E624AABBC50018BA50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628DC5E524AABBC50018BA50 /* Preview Assets.xcassets */; };
 		628DC5E924AABBC50018BA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628DC5E724AABBC50018BA50 /* LaunchScreen.storyboard */; };
+		628DC5F124AACD820018BA50 /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628DC5F024AACD820018BA50 /* AddClassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6218F0C124ABEA11007D4299 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		628DC5D924AABBC40018BA50 /* Courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Courses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		628DC5DC24AABBC40018BA50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		628DC5DE24AABBC40018BA50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		628DC5E524AABBC50018BA50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		628DC5E824AABBC50018BA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		628DC5EA24AABBC50018BA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628DC5F024AACD820018BA50 /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				628DC5DC24AABBC40018BA50 /* AppDelegate.swift */,
 				628DC5DE24AABBC40018BA50 /* SceneDelegate.swift */,
 				628DC5E024AABBC40018BA50 /* ContentView.swift */,
+				6218F0C124ABEA11007D4299 /* ItemRow.swift */,
+				628DC5F024AACD820018BA50 /* AddClassView.swift */,
 				628DC5E224AABBC50018BA50 /* Assets.xcassets */,
 				628DC5E724AABBC50018BA50 /* LaunchScreen.storyboard */,
 				628DC5EA24AABBC50018BA50 /* Info.plist */,
@@ -102,7 +108,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Ian Larson";
 				TargetAttributes = {
 					628DC5D824AABBC40018BA50 = {
@@ -148,7 +154,9 @@
 			files = (
 				628DC5DD24AABBC40018BA50 /* AppDelegate.swift in Sources */,
 				628DC5DF24AABBC40018BA50 /* SceneDelegate.swift in Sources */,
+				6218F0C224ABEA11007D4299 /* ItemRow.swift in Sources */,
 				628DC5E124AABBC40018BA50 /* ContentView.swift in Sources */,
+				628DC5F124AACD820018BA50 /* AddClassView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +200,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +261,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
