@@ -15,9 +15,9 @@ struct AddView: View {
     
     @State private var shortName = ""
     @State private var fullName = ""
-    @State private var semester: String = "Fall"
+    @State private var semester: String = "Spring"
     @State private var year: String = "2019"
-    @State private var creditHours = 2
+    @State private var creditHours = 3
     @State private var grade: String = "A"
     @State private var prof = ""
     
@@ -31,7 +31,7 @@ struct AddView: View {
             Form {
                 
                 Section(header: Text("Basic Info")) {
-                    TextField("Class Code: ", text: $shortName)
+                    TextField("Class Code", text: $shortName)
                     
                     TextField("Full Class Name: ", text: $fullName)
                     

@@ -8,23 +8,6 @@
 
 import SwiftUI
 
-extension Color {
-    static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
-}
-
-struct CourseItem: Identifiable, Codable {
-    var id = UUID()
-    let shortName: String
-    let fullName: String
-    let creditHours: Int
-    let semester: String
-    let year: String
-    let grade: String
-    let prof: String
-    
-    static let example = CourseItem(shortName: "COMP 1210", fullName: "Object Oriented Programming I", creditHours: 3, semester: "Spring", year: "2020", grade: "A", prof: "Cross")
-}
-
 class Course: ObservableObject {
     @Published var items = [CourseItem]() {
         didSet {
@@ -51,6 +34,7 @@ class Course: ObservableObject {
     }
 }
 
+
 struct ContentView: View {
     @ObservedObject var course = Course()
     @State private var showingAddClass = false
@@ -63,21 +47,19 @@ struct ContentView: View {
                             ItemRow(item: item)
                         }
                             .onDelete(perform: removeItems)
+                            .onMove(perform: moveItems)
                     }
                         .navigationBarTitle("Classes")
-                        .navigationBarItems(trailing:
+                        .navigationBarItems(leading: EditButton(), trailing:
                             Button(action: {
-                        self.showingAddClass = true
-                    }) {
-                        Text("Add Class")
-                        }
-                    )
-                        .sheet(isPresented: $showingAddClass) {
-                            //Show AddView Here
-                            AddView(course: self.course)
+                                self.showingAddClass = true
+                            }) {
+                                Text("Add Class")
+                                })
+                            .sheet(isPresented: $showingAddClass) {
+                                //Show AddView Here
+                                AddView(course: self.course)
                     }
-            
-                    
                 }
             }
             
